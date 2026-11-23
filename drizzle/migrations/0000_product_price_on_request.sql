@@ -1,0 +1,1 @@
+ALTER TABLE public.products ADD COLUMN price_on_request boolean NOT NULL DEFAULT false; COMMENT ON COLUMN public.products.price_on_request IS 'Price must be confirmed by enquiry; the numeric price is not displayed or used for cart purchases when true.';

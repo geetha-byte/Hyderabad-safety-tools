@@ -1,0 +1,1992 @@
+[
+  {
+    "name": "Karam Safety Helmet",
+    "sources": [
+      {
+        "key": "p2-01",
+        "name": "Yellow Karam Helmet"
+      },
+      {
+        "key": "p2-02",
+        "name": "White Karam Helmet"
+      },
+      {
+        "key": "p2-03",
+        "name": "Blue Karam Helmet"
+      }
+    ],
+    "colours": [
+      "Yellow",
+      "White",
+      "Blue"
+    ],
+    "sizes": [],
+    "category": "head-protection",
+    "brand": "Karam",
+    "slug": "karam-safety-helmet",
+    "sku": "ME-2-01",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Karam Safety Helmet from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Solido Safety Helmet",
+    "sources": [
+      {
+        "key": "p2-04",
+        "name": "Solido White Helmet"
+      },
+      {
+        "key": "p2-05",
+        "name": "Solido Yellow Helmet"
+      }
+    ],
+    "colours": [
+      "White",
+      "Yellow"
+    ],
+    "sizes": [],
+    "category": "head-protection",
+    "brand": "Solido",
+    "slug": "solido-safety-helmet",
+    "sku": "ME-2-04",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Solido Safety Helmet from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "N 555 Ear Muff",
+    "sources": [
+      {
+        "key": "p2-06",
+        "name": "N 555 Ear Muff"
+      }
+    ],
+    "colours": [
+      "Red",
+      "Black"
+    ],
+    "sizes": [],
+    "category": "head-protection",
+    "brand": "Manoj Enterprises",
+    "slug": "n-555-ear-muff",
+    "sku": "ME-2-06",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "N 555 Ear Muff from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "EP21 Ear Muff",
+    "sources": [
+      {
+        "key": "p2-07",
+        "name": "EP21 Ear Muff"
+      }
+    ],
+    "colours": [
+      "Green",
+      "Black"
+    ],
+    "sizes": [],
+    "category": "head-protection",
+    "brand": "Manoj Enterprises",
+    "slug": "ep21-ear-muff",
+    "sku": "ME-2-07",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "EP21 Ear Muff from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "High Visibility Safety Jacket",
+    "sources": [
+      {
+        "key": "p2-08",
+        "name": "Safety Jacket Green"
+      },
+      {
+        "key": "p2-09",
+        "name": "Safety Jacket Orange"
+      }
+    ],
+    "colours": [
+      "Green",
+      "Orange"
+    ],
+    "sizes": [],
+    "category": "ppe",
+    "brand": "Manoj Enterprises",
+    "slug": "high-visibility-safety-jacket",
+    "sku": "ME-2-08",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "High Visibility Safety Jacket from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Safety Goggles",
+    "sources": [
+      {
+        "key": "p2-10",
+        "name": "Safety Goggles White"
+      },
+      {
+        "key": "p2-11",
+        "name": "Safety Goggles Black"
+      }
+    ],
+    "colours": [
+      "White",
+      "Black"
+    ],
+    "sizes": [],
+    "category": "eye-face",
+    "brand": "Manoj Enterprises",
+    "slug": "safety-goggles",
+    "sku": "ME-2-10",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Safety Goggles from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Grinding Wheel",
+    "sources": [
+      {
+        "key": "p2-12",
+        "name": "Grinding Wheel"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "grinding-wheel",
+    "sku": "ME-2-12",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Grinding Wheel from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Cotton Gloves",
+    "sources": [
+      {
+        "key": "p2-13",
+        "name": "Cotton Gloves"
+      }
+    ],
+    "colours": [
+      "Blue",
+      "Black"
+    ],
+    "sizes": [],
+    "category": "hand-protection",
+    "brand": "Manoj Enterprises",
+    "slug": "cotton-gloves",
+    "sku": "ME-2-13",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Cotton Gloves from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Rubber Gloves",
+    "sources": [
+      {
+        "key": "p2-14",
+        "name": "Rubber Gloves"
+      }
+    ],
+    "colours": [
+      "Orange"
+    ],
+    "sizes": [],
+    "category": "hand-protection",
+    "brand": "Manoj Enterprises",
+    "slug": "rubber-gloves",
+    "sku": "ME-2-14",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Rubber Gloves from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Examination Gloves",
+    "sources": [
+      {
+        "key": "p2-15",
+        "name": "Examination Gloves"
+      }
+    ],
+    "colours": [
+      "Blue",
+      "White"
+    ],
+    "sizes": [],
+    "category": "hand-protection",
+    "brand": "Manoj Enterprises",
+    "slug": "examination-gloves",
+    "sku": "ME-2-15",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Examination Gloves from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "N95 Mask",
+    "sources": [
+      {
+        "key": "p2-16",
+        "name": "N95 Mask"
+      }
+    ],
+    "colours": [
+      "Yellow"
+    ],
+    "sizes": [],
+    "category": "respiratory",
+    "brand": "Manoj Enterprises",
+    "slug": "n95-mask",
+    "sku": "ME-2-16",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "N95 Mask from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Surgical Mask",
+    "sources": [
+      {
+        "key": "p2-17",
+        "name": "Surgical Mask"
+      }
+    ],
+    "colours": [
+      "Blue"
+    ],
+    "sizes": [],
+    "category": "respiratory",
+    "brand": "Manoj Enterprises",
+    "slug": "surgical-mask",
+    "sku": "ME-2-17",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Surgical Mask from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Caution Tape",
+    "sources": [
+      {
+        "key": "p2-18",
+        "name": "Caution Tape"
+      }
+    ],
+    "colours": [
+      "Yellow"
+    ],
+    "sizes": [],
+    "category": "signs",
+    "brand": "Manoj Enterprises",
+    "slug": "caution-tape",
+    "sku": "ME-2-18",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Caution Tape from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Barrication Tape",
+    "sources": [
+      {
+        "key": "p2-19",
+        "name": "Barrication Tape"
+      }
+    ],
+    "colours": [
+      "Red",
+      "White"
+    ],
+    "sizes": [],
+    "category": "signs",
+    "brand": "Manoj Enterprises",
+    "slug": "barrication-tape",
+    "sku": "ME-2-19",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Barrication Tape from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Anti Skid Tape",
+    "sources": [
+      {
+        "key": "p2-20",
+        "name": "Anti Skid Tape"
+      }
+    ],
+    "colours": [
+      "Black",
+      "Yellow"
+    ],
+    "sizes": [],
+    "category": "signs",
+    "brand": "Manoj Enterprises",
+    "slug": "anti-skid-tape",
+    "sku": "ME-2-20",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Anti Skid Tape from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Retro Reflective Tape",
+    "sources": [
+      {
+        "key": "p2-21",
+        "name": "Retro Reflective Tape"
+      }
+    ],
+    "colours": [
+      "Red",
+      "White",
+      "Yellow"
+    ],
+    "sizes": [],
+    "category": "signs",
+    "brand": "Manoj Enterprises",
+    "slug": "retro-reflective-tape",
+    "sku": "ME-2-21",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Retro Reflective Tape from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Safety Cones",
+    "sources": [
+      {
+        "key": "p2-22",
+        "name": "Safety Cones"
+      }
+    ],
+    "colours": [
+      "Orange"
+    ],
+    "sizes": [],
+    "category": "road-safety",
+    "brand": "Manoj Enterprises",
+    "slug": "safety-cones",
+    "sku": "ME-2-22",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Safety Cones from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Barriers",
+    "sources": [
+      {
+        "key": "p2-23",
+        "name": "Barriers"
+      }
+    ],
+    "colours": [
+      "Red",
+      "Yellow"
+    ],
+    "sizes": [],
+    "category": "road-safety",
+    "brand": "Manoj Enterprises",
+    "slug": "barriers",
+    "sku": "ME-2-23",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Barriers from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Reflective Sign Boards",
+    "sources": [
+      {
+        "key": "p2-24",
+        "name": "Reflective Sign Boards"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "signs",
+    "brand": "Manoj Enterprises",
+    "slug": "reflective-sign-boards",
+    "sku": "ME-2-24",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Reflective Sign Boards from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Full Body Safety Belt",
+    "sources": [
+      {
+        "key": "p2-25",
+        "name": "Full Body Safety Belt"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "fall-protection",
+    "brand": "Manoj Enterprises",
+    "slug": "full-body-safety-belt",
+    "sku": "ME-2-25",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Full Body Safety Belt from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Spring Post",
+    "sources": [
+      {
+        "key": "p2-26",
+        "name": "Spring Post"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "road-safety",
+    "brand": "Manoj Enterprises",
+    "slug": "spring-post",
+    "sku": "ME-2-26",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Spring Post from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Car Slot Number",
+    "sources": [
+      {
+        "key": "p2-27",
+        "name": "Car Slot Number"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "road-safety",
+    "brand": "Manoj Enterprises",
+    "slug": "car-slot-number",
+    "sku": "ME-2-27",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Car Slot Number from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Column Painting",
+    "sources": [
+      {
+        "key": "p2-28",
+        "name": "Column Painting"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "road-safety",
+    "brand": "Manoj Enterprises",
+    "slug": "column-painting",
+    "sku": "ME-2-28",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Column Painting from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Speed Breakers",
+    "sources": [
+      {
+        "key": "p2-29",
+        "name": "Speed Breakers"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "road-safety",
+    "brand": "Speed",
+    "slug": "speed-breakers",
+    "sku": "ME-2-29",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Speed Breakers from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Fire Bucket with Stand",
+    "sources": [
+      {
+        "key": "p2-30",
+        "name": "Fire Bucket with Stand"
+      }
+    ],
+    "colours": [
+      "Red"
+    ],
+    "sizes": [],
+    "category": "fire-safety",
+    "brand": "Manoj Enterprises",
+    "slug": "fire-bucket-with-stand",
+    "sku": "ME-2-30",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Fire Bucket with Stand from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Hillson U4 Boots",
+    "sources": [
+      {
+        "key": "p3-01",
+        "name": "Hillson U4 Boots"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Hillson",
+    "slug": "hillson-u4-boots",
+    "sku": "ME-3-01",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Hillson U4 Boots from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Tiger Leopard Shoes",
+    "sources": [
+      {
+        "key": "p3-02",
+        "name": "Tiger Leopard Shoes"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Tiger",
+    "slug": "tiger-leopard-shoes",
+    "sku": "ME-3-02",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Tiger Leopard Shoes from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Karam Safety Shoes",
+    "sources": [
+      {
+        "key": "p3-03",
+        "name": "Karam Safety Shoes"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Karam",
+    "slug": "karam-safety-shoes",
+    "sku": "ME-3-03",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Karam Safety Shoes from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Speed Safety Shoes",
+    "sources": [
+      {
+        "key": "p3-04",
+        "name": "Speed Safety Shoes"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Speed",
+    "slug": "speed-safety-shoes",
+    "sku": "ME-3-04",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Speed Safety Shoes from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Essentials Low Ankle SY01",
+    "sources": [
+      {
+        "key": "p3-05",
+        "name": "Essentials Low Ankle SY01"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Manoj Enterprises",
+    "slug": "essentials-low-ankle-sy01",
+    "sku": "ME-3-05",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Essentials Low Ankle SY01 from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Essentials High Ankle SY02",
+    "sources": [
+      {
+        "key": "p3-06",
+        "name": "Essentials High Ankle SY02"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Manoj Enterprises",
+    "slug": "essentials-high-ankle-sy02",
+    "sku": "ME-3-06",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Essentials High Ankle SY02 from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Protect+ Low Ankle SY03",
+    "sources": [
+      {
+        "key": "p3-07",
+        "name": "Protect+ Low Ankle SY03"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Manoj Enterprises",
+    "slug": "protect-low-ankle-sy03",
+    "sku": "ME-3-07",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Protect+ Low Ankle SY03 from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Protect+ Low Ankle SY04",
+    "sources": [
+      {
+        "key": "p3-08",
+        "name": "Protect+ Low Ankle SY04"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Manoj Enterprises",
+    "slug": "protect-low-ankle-sy04",
+    "sku": "ME-3-08",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Protect+ Low Ankle SY04 from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Executive SY05",
+    "sources": [
+      {
+        "key": "p3-09",
+        "name": "Executive SY05"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Manoj Enterprises",
+    "slug": "executive-sy05",
+    "sku": "ME-3-09",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Executive SY05 from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Kevlar SY06",
+    "sources": [
+      {
+        "key": "p3-10",
+        "name": "Kevlar SY06"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Manoj Enterprises",
+    "slug": "kevlar-sy06",
+    "sku": "ME-3-10",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Kevlar SY06 from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Sportx SY07",
+    "sources": [
+      {
+        "key": "p3-11",
+        "name": "Sportx SY07"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Manoj Enterprises",
+    "slug": "sportx-sy07",
+    "sku": "ME-3-11",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Sportx SY07 from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Veera SY08",
+    "sources": [
+      {
+        "key": "p3-12",
+        "name": "Veera SY08"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Manoj Enterprises",
+    "slug": "veera-sy08",
+    "sku": "ME-3-12",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Veera SY08 from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Premium Low Ankle SY09",
+    "sources": [
+      {
+        "key": "p3-13",
+        "name": "Premium Low Ankle SY09"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Manoj Enterprises",
+    "slug": "premium-low-ankle-sy09",
+    "sku": "ME-3-13",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Premium Low Ankle SY09 from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Premium Low Ankle SY10",
+    "sources": [
+      {
+        "key": "p3-14",
+        "name": "Premium Low Ankle SY10"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Manoj Enterprises",
+    "slug": "premium-low-ankle-sy10",
+    "sku": "ME-3-14",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Premium Low Ankle SY10 from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Bata Safety Shoes",
+    "sources": [
+      {
+        "key": "p3-15",
+        "name": "Bata Safety Shoes"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Bata",
+    "slug": "bata-safety-shoes",
+    "sku": "ME-3-15",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Bata Safety Shoes from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Don Safety Gumboots",
+    "sources": [
+      {
+        "key": "p3-16",
+        "name": "Don Safety Gumboots"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Don",
+    "slug": "don-safety-gumboots",
+    "sku": "ME-3-16",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Don Safety Gumboots from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Advance Low Ankle SH01",
+    "sources": [
+      {
+        "key": "p3-17",
+        "name": "Advance Low Ankle SH01"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Manoj Enterprises",
+    "slug": "advance-low-ankle-sh01",
+    "sku": "ME-3-17",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Advance Low Ankle SH01 from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Advance High Ankle SH02",
+    "sources": [
+      {
+        "key": "p3-18",
+        "name": "Advance High Ankle SH02"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Manoj Enterprises",
+    "slug": "advance-high-ankle-sh02",
+    "sku": "ME-3-18",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Advance High Ankle SH02 from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Solido Hector SF86 Gumboots",
+    "sources": [
+      {
+        "key": "p3-19",
+        "name": "Solido Hector SF86 Gumboots"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Solido",
+    "slug": "solido-hector-sf86-gumboots",
+    "sku": "ME-3-19",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Solido Hector SF86 Gumboots from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Safety Gumboots",
+    "sources": [
+      {
+        "key": "p3-20",
+        "name": "Safety Gumboots"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Manoj Enterprises",
+    "slug": "safety-gumboots",
+    "sku": "ME-3-20",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Safety Gumboots from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Fire Extinguisher",
+    "sources": [
+      {
+        "key": "p4-01",
+        "name": "Fire Extinguisher"
+      }
+    ],
+    "colours": [
+      "Red"
+    ],
+    "sizes": [],
+    "category": "fire-safety",
+    "brand": "Manoj Enterprises",
+    "slug": "fire-extinguisher",
+    "sku": "ME-4-01",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Fire Extinguisher from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Fire Bucket",
+    "sources": [
+      {
+        "key": "p4-02",
+        "name": "Fire Bucket"
+      }
+    ],
+    "colours": [
+      "Red"
+    ],
+    "sizes": [],
+    "category": "fire-safety",
+    "brand": "Manoj Enterprises",
+    "slug": "fire-bucket",
+    "sku": "ME-4-02",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Fire Bucket from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Fire Blanket",
+    "sources": [
+      {
+        "key": "p4-03",
+        "name": "Fire Blanket"
+      }
+    ],
+    "colours": [
+      "Red"
+    ],
+    "sizes": [],
+    "category": "fire-safety",
+    "brand": "Manoj Enterprises",
+    "slug": "fire-blanket",
+    "sku": "ME-4-03",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Fire Blanket from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Fire Hose Reel Drum",
+    "sources": [
+      {
+        "key": "p4-04",
+        "name": "Fire Hose Reel Drum"
+      }
+    ],
+    "colours": [
+      "Red"
+    ],
+    "sizes": [],
+    "category": "fire-safety",
+    "brand": "Manoj Enterprises",
+    "slug": "fire-hose-reel-drum",
+    "sku": "ME-4-04",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Fire Hose Reel Drum from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Fire Ball",
+    "sources": [
+      {
+        "key": "p4-05",
+        "name": "Fire Ball"
+      }
+    ],
+    "colours": [
+      "Red"
+    ],
+    "sizes": [],
+    "category": "fire-safety",
+    "brand": "Manoj Enterprises",
+    "slug": "fire-ball",
+    "sku": "ME-4-05",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Fire Ball from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Wheeled Dustbin",
+    "sources": [
+      {
+        "key": "p4-06",
+        "name": "120 Ltr Dustbin"
+      },
+      {
+        "key": "p4-07",
+        "name": "660 Ltr Dustbin"
+      },
+      {
+        "key": "p4-08",
+        "name": "1100 Ltr Dustbin"
+      }
+    ],
+    "colours": [
+      "Green",
+      "Blue"
+    ],
+    "sizes": [
+      "120 L",
+      "660 L",
+      "1100 L"
+    ],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "wheeled-dustbin",
+    "sku": "ME-4-06",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Wheeled Dustbin from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Stainless Dustbin",
+    "sources": [
+      {
+        "key": "p4-09",
+        "name": "Stainless Dustbin"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "stainless-dustbin",
+    "sku": "ME-4-09",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Stainless Dustbin from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Epoxy Tools",
+    "sources": [
+      {
+        "key": "p4-10",
+        "name": "Epoxy Tools"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "epoxy-tools",
+    "sku": "ME-4-10",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Epoxy Tools from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Aluminium Boom Barrier",
+    "sources": [
+      {
+        "key": "p4-11",
+        "name": "Aluminium Boom Barrier"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "road-safety",
+    "brand": "Manoj Enterprises",
+    "slug": "aluminium-boom-barrier",
+    "sku": "ME-4-11",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Aluminium Boom Barrier from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Aluminium Flood Barrier",
+    "sources": [
+      {
+        "key": "p4-12",
+        "name": "Aluminium Flood Barrier"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "road-safety",
+    "brand": "Manoj Enterprises",
+    "slug": "aluminium-flood-barrier",
+    "sku": "ME-4-12",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Aluminium Flood Barrier from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Power Tools",
+    "sources": [
+      {
+        "key": "p4-13",
+        "name": "Power Tools"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "power-tools",
+    "sku": "ME-4-13",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Power Tools from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Hand Tools",
+    "sources": [
+      {
+        "key": "p4-14",
+        "name": "Hand Tools"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "hand-tools",
+    "sku": "ME-4-14",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Hand Tools from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Rain Coats",
+    "sources": [
+      {
+        "key": "p4-15",
+        "name": "Rain Coats"
+      }
+    ],
+    "colours": [
+      "Green",
+      "Orange"
+    ],
+    "sizes": [],
+    "category": "ppe",
+    "brand": "Manoj Enterprises",
+    "slug": "rain-coats",
+    "sku": "ME-4-15",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Rain Coats from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Medical Stretchers",
+    "sources": [
+      {
+        "key": "p4-16",
+        "name": "Medical Stretchers"
+      }
+    ],
+    "colours": [
+      "Orange"
+    ],
+    "sizes": [],
+    "category": "first-aid",
+    "brand": "Manoj Enterprises",
+    "slug": "medical-stretchers",
+    "sku": "ME-4-16",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Medical Stretchers from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Welding Electrodes",
+    "sources": [
+      {
+        "key": "p4-17",
+        "name": "Welding Electrodes"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "welding-electrodes",
+    "sku": "ME-4-17",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Welding Electrodes from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Welding Machine",
+    "sources": [
+      {
+        "key": "p4-18",
+        "name": "Welding Machine"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "welding-machine",
+    "sku": "ME-4-18",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Welding Machine from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "First Aid Box",
+    "sources": [
+      {
+        "key": "p4-19",
+        "name": "First Aid Box"
+      }
+    ],
+    "colours": [
+      "Green",
+      "White"
+    ],
+    "sizes": [],
+    "category": "first-aid",
+    "brand": "Manoj Enterprises",
+    "slug": "first-aid-box",
+    "sku": "ME-4-19",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "First Aid Box from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Snake Catchers",
+    "sources": [
+      {
+        "key": "p4-20",
+        "name": "Snake Catchers"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "snake-catchers",
+    "sku": "ME-4-20",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Snake Catchers from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "1 to 6 Inch Paint Brush",
+    "sources": [
+      {
+        "key": "p5-01",
+        "name": "1 to 6 Inch Paint Brush"
+      }
+    ],
+    "colours": [],
+    "sizes": [
+      "1 inch",
+      "2 inch",
+      "3 inch",
+      "4 inch",
+      "5 inch",
+      "6 inch"
+    ],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "1-to-6-inch-paint-brush",
+    "sku": "ME-5-01",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "1 to 6 Inch Paint Brush from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "9 Inch Interior Roller",
+    "sources": [
+      {
+        "key": "p5-02",
+        "name": "9 Inch Interior Roller"
+      }
+    ],
+    "colours": [],
+    "sizes": [
+      "9 inch"
+    ],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "9-inch-interior-roller",
+    "sku": "ME-5-02",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "9 Inch Interior Roller from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "9 Inch Exterior Roller",
+    "sources": [
+      {
+        "key": "p5-03",
+        "name": "9 Inch Exterior Roller"
+      }
+    ],
+    "colours": [],
+    "sizes": [
+      "9 inch"
+    ],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "9-inch-exterior-roller",
+    "sku": "ME-5-03",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "9 Inch Exterior Roller from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "4 Inch Roller",
+    "sources": [
+      {
+        "key": "p5-04",
+        "name": "4 Inch Roller"
+      }
+    ],
+    "colours": [],
+    "sizes": [
+      "4 inch"
+    ],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "4-inch-roller",
+    "sku": "ME-5-04",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "4 Inch Roller from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Coconut Brush",
+    "sources": [
+      {
+        "key": "p5-05",
+        "name": "Coconut Brush"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "coconut-brush",
+    "sku": "ME-5-05",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Coconut Brush from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Wire Brush",
+    "sources": [
+      {
+        "key": "p5-06",
+        "name": "Wire Brush"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "wire-brush",
+    "sku": "ME-5-06",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Wire Brush from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Level Pipe",
+    "sources": [
+      {
+        "key": "p5-07",
+        "name": "Level Pipe"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "level-pipe",
+    "sku": "ME-5-07",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Level Pipe from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Thinner",
+    "sources": [
+      {
+        "key": "p5-08",
+        "name": "Thinner"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "thinner",
+    "sku": "ME-5-08",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Thinner from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "4 & 5 Inch Cut Off Wheel",
+    "sources": [
+      {
+        "key": "p5-09",
+        "name": "4 & 5 Inch Cut Off Wheel"
+      }
+    ],
+    "colours": [],
+    "sizes": [
+      "4 inch",
+      "5 inch"
+    ],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "4-5-inch-cut-off-wheel",
+    "sku": "ME-5-09",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "4 & 5 Inch Cut Off Wheel from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Green Cut Off Wheel",
+    "sources": [
+      {
+        "key": "p5-10",
+        "name": "4 Inch Green Cut Off Wheel"
+      },
+      {
+        "key": "p5-11",
+        "name": "14 Inch Green Cut Off Wheel"
+      }
+    ],
+    "colours": [
+      "Green"
+    ],
+    "sizes": [
+      "4 inch",
+      "14 inch"
+    ],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "green-cut-off-wheel",
+    "sku": "ME-5-10",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Green Cut Off Wheel from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "4 & 5 Inch Diamond Cup Wheel",
+    "sources": [
+      {
+        "key": "p5-12",
+        "name": "4 & 5 Inch Diamond Cup Wheel"
+      }
+    ],
+    "colours": [],
+    "sizes": [
+      "4 inch",
+      "5 inch"
+    ],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "4-5-inch-diamond-cup-wheel",
+    "sku": "ME-5-12",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "4 & 5 Inch Diamond Cup Wheel from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Scraper",
+    "sources": [
+      {
+        "key": "p5-13",
+        "name": "Scraper"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "scraper",
+    "sku": "ME-5-13",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Scraper from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Putty Knives",
+    "sources": [
+      {
+        "key": "p5-14",
+        "name": "Putty Knives"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "putty-knives",
+    "sku": "ME-5-14",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Putty Knives from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Gurumala",
+    "sources": [
+      {
+        "key": "p5-15",
+        "name": "Gurumala"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "gurumala",
+    "sku": "ME-5-15",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Gurumala from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Combing Tool",
+    "sources": [
+      {
+        "key": "p5-16",
+        "name": "Combing Tool"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "combing-tool",
+    "sku": "ME-5-16",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Combing Tool from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Altech Blade",
+    "sources": [
+      {
+        "key": "p5-17",
+        "name": "Altech Blade"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "altech-blade",
+    "sku": "ME-5-17",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Altech Blade from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Nail Free Caulking Gun",
+    "sources": [
+      {
+        "key": "p5-18",
+        "name": "Nail Free Caulking Gun"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "nail-free-caulking-gun",
+    "sku": "ME-5-18",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Nail Free Caulking Gun from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Chemical Rebarring Gun",
+    "sources": [
+      {
+        "key": "p5-19",
+        "name": "Chemical Rebarring Gun"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "chemical-rebarring-gun",
+    "sku": "ME-5-19",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Chemical Rebarring Gun from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Sausage Pouch Gun",
+    "sources": [
+      {
+        "key": "p5-20",
+        "name": "Sausage Pouch Gun"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "sausage-pouch-gun",
+    "sku": "ME-5-20",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Sausage Pouch Gun from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Glass Suction Lifter",
+    "sources": [
+      {
+        "key": "p5-21",
+        "name": "Glass Suction Lifter"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "lifting",
+    "brand": "Manoj Enterprises",
+    "slug": "glass-suction-lifter",
+    "sku": "ME-5-21",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Glass Suction Lifter from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Spirit Levels",
+    "sources": [
+      {
+        "key": "p5-22",
+        "name": "Spirit Levels"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "spirit-levels",
+    "sku": "ME-5-22",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Spirit Levels from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Measuring Tape",
+    "sources": [
+      {
+        "key": "p5-23",
+        "name": "Measuring Tape"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "measuring-tape",
+    "sku": "ME-5-23",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Measuring Tape from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Power Bit HD",
+    "sources": [
+      {
+        "key": "p5-24",
+        "name": "Power Bit HD"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "power-bit-hd",
+    "sku": "ME-5-24",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Power Bit HD from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Heavy Duty Spanner",
+    "sources": [
+      {
+        "key": "p5-25",
+        "name": "Heavy Duty Spanner"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "heavy-duty-spanner",
+    "sku": "ME-5-25",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Heavy Duty Spanner from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Fan Type Mixer Rod",
+    "sources": [
+      {
+        "key": "p5-26",
+        "name": "Fan Type Mixer Rod"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "fan-type-mixer-rod",
+    "sku": "ME-5-26",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Fan Type Mixer Rod from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Spiral Type Mixer Rod",
+    "sources": [
+      {
+        "key": "p5-27",
+        "name": "Spiral Type Mixer Rod"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "spiral-type-mixer-rod",
+    "sku": "ME-5-27",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Spiral Type Mixer Rod from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Building Green Mat",
+    "sources": [
+      {
+        "key": "p5-28",
+        "name": "Building Green Mat"
+      }
+    ],
+    "colours": [
+      "Green"
+    ],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "building-green-mat",
+    "sku": "ME-5-28",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Building Green Mat from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Farming Boots",
+    "sources": [
+      {
+        "key": "p5-29",
+        "name": "Farming Boots"
+      }
+    ],
+    "colours": [
+      "Blue"
+    ],
+    "sizes": [],
+    "category": "safety-shoes",
+    "brand": "Manoj Enterprises",
+    "slug": "farming-boots",
+    "sku": "ME-5-29",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Farming Boots from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Farming Safety Full Body",
+    "sources": [
+      {
+        "key": "p5-30",
+        "name": "Farming Safety Full Body"
+      }
+    ],
+    "colours": [
+      "Green"
+    ],
+    "sizes": [],
+    "category": "ppe",
+    "brand": "Manoj Enterprises",
+    "slug": "farming-safety-full-body",
+    "sku": "ME-5-30",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Farming Safety Full Body from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "HDPE Pallets",
+    "sources": [
+      {
+        "key": "p6-01",
+        "name": "HDPE Pallets"
+      }
+    ],
+    "colours": [
+      "Blue"
+    ],
+    "sizes": [],
+    "category": "lifting",
+    "brand": "Manoj Enterprises",
+    "slug": "hdpe-pallets",
+    "sku": "ME-6-01",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "HDPE Pallets from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Wood Pallets",
+    "sources": [
+      {
+        "key": "p6-02",
+        "name": "Wood Pallets"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "lifting",
+    "brand": "Manoj Enterprises",
+    "slug": "wood-pallets",
+    "sku": "ME-6-02",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Wood Pallets from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Gas Detector",
+    "sources": [
+      {
+        "key": "p6-03",
+        "name": "Gas Detector"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "gas-detector",
+    "sku": "ME-6-03",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Gas Detector from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Walkie Talkie",
+    "sources": [
+      {
+        "key": "p6-04",
+        "name": "Walkie Talkie"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "walkie-talkie",
+    "sku": "ME-6-04",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Walkie Talkie from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Safety Helmet Holder",
+    "sources": [
+      {
+        "key": "p6-05",
+        "name": "Safety Helmet Holder"
+      }
+    ],
+    "colours": [],
+    "sizes": [],
+    "category": "head-protection",
+    "brand": "Manoj Enterprises",
+    "slug": "safety-helmet-holder",
+    "sku": "ME-6-05",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Safety Helmet Holder from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Traffic Baton Light",
+    "sources": [
+      {
+        "key": "p6-06",
+        "name": "Traffic Baton Light"
+      }
+    ],
+    "colours": [
+      "Red",
+      "Green"
+    ],
+    "sizes": [],
+    "category": "road-safety",
+    "brand": "Manoj Enterprises",
+    "slug": "traffic-baton-light",
+    "sku": "ME-6-06",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Traffic Baton Light from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Coverall",
+    "sources": [
+      {
+        "key": "p6-07",
+        "name": "Coverall"
+      }
+    ],
+    "colours": [
+      "White"
+    ],
+    "sizes": [],
+    "category": "ppe",
+    "brand": "Manoj Enterprises",
+    "slug": "coverall",
+    "sku": "ME-6-07",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Coverall from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  },
+  {
+    "name": "Breath Analyser",
+    "sources": [
+      {
+        "key": "p6-08",
+        "name": "Breath Analyser"
+      }
+    ],
+    "colours": [
+      "Black"
+    ],
+    "sizes": [],
+    "category": "industrial-tools",
+    "brand": "Manoj Enterprises",
+    "slug": "breath-analyser",
+    "sku": "ME-6-08",
+    "priceOnRequest": true,
+    "stock": 0,
+    "description": "Breath Analyser from the Manoj Enterprises industrial safety and tools catalogue. Contact us to confirm specifications, available options, pricing and stock."
+  }
+]

@@ -1,0 +1,25 @@
+# Roadmap
+- [x] Add admin-only user invitations, verified-account role changes and invitation password setup; verified saved role changes and regular-user denial
+- [x] Send the requested invitation to geetha@hungrybird.in and verify the pending regular-user account appears in admin
+- [ ] Verify invitation receipt and password setup — waiting for Geetha to open her email invitation; the website is not yet published
+- [x] Fix only selected catalogue-read and product-image-download security findings; verified visitor, regular-user and admin access
+- [x] Add every PDF catalogue product: 100 grouped listings with 108 background-free fitted images
+- [x] Show Price on request for all PDF products without inventing prices or stock quantities
+- [x] Verify populated catalogue, image galleries, colour choices and price enquiries across desktop and phone
+- [x] Add admin CSV import with template, validation, preview and secure bulk product creation
+- [x] Match Kisan360 storefront structure: compact header, category sidebar, short banner, category tiles and grouped listings
+- [x] Verify populated remix listings with a temporary CSV-imported product, images and cart options; real catalogue awaits the user's CSV
+- [x] Remove the admin login icon from the storefront; keep direct admin access
+- [x] Add optional product sizes and multiple colours, preserving selections in the cart
+- [x] Replace black storefront palette with navy, orange and light neutral sections
+- [x] Custom store (no Shopify): home, shop, product, cart, wishlist, quote
+- [x] Secure admin product add/edit/delete and image uploads
+- [x] Move storefront product reads to saved database products
+- [x] Verify admin sign-in, product creation, storefront display and deletion end to end
+- [x] Restore the existing verified store administrator's role and automatic verified-email role assignment
+- [ ] Real checkout/payments (Razorpay) + accounts
+- [ ] Real contact details — waiting on user
+- [x] Make product photos HD (rebuilt from PDF)
+- [x] Users & roles locally: needs server-only key unavailable outside Lovable (explained)
+- [x] Use uploaded product export (images + content)
+- [x] Local-friendly Users & roles
