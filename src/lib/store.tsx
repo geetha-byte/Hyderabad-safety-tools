@@ -29,4 +29,4 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   };
   return <StoreContext.Provider value={value}>{children}</StoreContext.Provider>;
 }
-export const WHATSAPP = "https://wa.me/910000000000"; // placeholder until real number is provided
+export const WHATSAPP = "https://wa.me/918978433246"; // placeholder until real number is provided

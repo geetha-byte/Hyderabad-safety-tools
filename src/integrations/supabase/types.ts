@@ -31,6 +31,7 @@ export type Database = {
           material: string
           name: string
           price: number
+          gst_rate: number
           price_on_request: boolean
           sale_price: number | null
           sizes: string[]

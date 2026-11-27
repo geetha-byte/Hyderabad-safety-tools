@@ -1,5 +1,4 @@
-import { z } from "zod";
-
+import * as z from "zod";
 export const productInput = z.object({
   id: z.string().uuid().optional(),
   slug: z.string().optional(),
@@ -10,6 +9,7 @@ export const productInput = z.object({
   description: z.string().trim().min(10).max(3000),
   price: z.number().nonnegative().max(100000000),
   priceOnRequest: z.boolean().optional(),
+  gstRate: z.number().min(0).max(100).default(18),
   salePrice: z.number().nonnegative().max(100000000).nullable(),
   images: z.array(z.string().min(1)).min(1).max(8),
   stock: z.number().int().nonnegative().max(100000000),

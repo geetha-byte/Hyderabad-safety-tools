@@ -1,6 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { productInput, type ProductInput } from "@/lib/products.functions";
-
+import { productInput, type ProductInput } from "@/lib/product-input";
 const valid: ProductInput = {
   name: "Test Safety Helmet",
   sku: "TEST-HAT-001",
@@ -8,6 +7,7 @@ const valid: ProductInput = {
   brand: "Test Brand",
   description: "A helmet used to verify product validation.",
   price: 1000,
+  gstRate: 18,
   salePrice: 800,
   images: ["test-image.jpg"],
   stock: 10,

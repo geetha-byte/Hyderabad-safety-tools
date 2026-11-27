@@ -1,7 +1,7 @@
 import { createFileRoute, useNavigate } from "@tanstack/react-router";
 import { useEffect, useState, type FormEvent } from "react";
 import { LockKeyhole, ShieldCheck } from "lucide-react";
-import { supabase } from "@/integrations/supabase/client";
+import { localLogin, localCurrentSession } from "@/lib/local-auth-api.functions";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -30,24 +30,29 @@ function AuthPage() {
   const [error, setError] = useState("");
 
   useEffect(() => {
-    supabase.auth.getUser().then(({ data }) => {
-      if (data.user) navigate({ to: redirect && redirect.startsWith("/admin") ? redirect : "/admin", replace: true });
-    });
-  }, [navigate, redirect]);
+  localCurrentSession().then((user) => {
+    if (user) navigate({ to: redirect && redirect.startsWith("/admin") ? redirect : "/admin", replace: true });
+  });
+}, [navigate, redirect]);
+async function signIn(event: FormEvent) {
+  event.preventDefault();
+  setLoading(true);
+  setError("");
 
-  async function signIn(event: FormEvent) {
-    event.preventDefault();
-    setLoading(true);
-    setError("");
-    const { error: signInError } = await supabase.auth.signInWithPassword({ email, password });
+  try {
+    const result = await localLogin({ data: { email, password } });
     setLoading(false);
-    if (signInError) {
-      setError("Email or password is incorrect. Please try again.");
-      return;
+
+    if (!result?.id) {
+    setError("Email or password is incorrect. Please try again.");
+    return;
     }
     navigate({ to: redirect && redirect.startsWith("/admin") ? redirect : "/admin", replace: true });
+  } catch {
+    setLoading(false);
+    setError("Email or password is incorrect. Please try again.");
   }
-
+}
   return (
     <div className="grid min-h-screen place-items-center bg-navy-deep px-4 py-12">
       <div className="w-full max-w-md">

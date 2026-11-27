@@ -1,7 +1,8 @@
 import { Link, useLocation } from "@tanstack/react-router";
 import { ChevronRight, Grid2X2, HardHat, ShieldCheck, Glasses, Hand, Footprints, Wind, Flame, Anchor, Zap, TrafficCone, HeartPulse, Wrench, Forklift, Signpost, type LucideIcon } from "lucide-react";
-import { categories } from "@/lib/catalog";
-
+import { useQuery } from "@tanstack/react-query";
+import { useServerFn } from "@tanstack/react-start";
+import { listLocalCategories } from "@/lib/local-categories.functions";
 export const categoryIcons: Record<string, LucideIcon> = {
   ppe: ShieldCheck, "head-protection": HardHat, "eye-face": Glasses,
   "hand-protection": Hand, "safety-shoes": Footprints, respiratory: Wind,
@@ -12,6 +13,11 @@ export const categoryIcons: Record<string, LucideIcon> = {
 
 export function CategoryNav({ onSelect }: { onSelect?: () => void }) {
   const location = useLocation();
+  const fetchCategories = useServerFn(listLocalCategories);
+  const { data: categories = [] } = useQuery({
+    queryKey: ["storefront-categories"],
+    queryFn: () => fetchCategories(),
+  });
   const selected = new URLSearchParams(location.searchStr).get("cat");
   return <nav aria-label="Product categories">
     <Link to="/shop" onClick={onSelect} className="flex h-12 items-center gap-3 bg-primary px-4 text-sm font-bold text-primary-foreground"><Grid2X2 className="h-4 w-4" />All Categories</Link>

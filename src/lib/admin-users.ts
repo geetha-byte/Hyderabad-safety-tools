@@ -1,5 +1,4 @@
-import { z } from "zod";
-
+import * as z from "zod";
 export const inviteUserInput = z.object({ email: z.string().trim().email(), redirectTo: z.string().url() });
 export const userRoleInput = z.object({ userId: z.string().uuid(), role: z.enum(["user", "admin"]) });
 

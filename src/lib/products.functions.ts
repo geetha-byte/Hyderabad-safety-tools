@@ -44,6 +44,7 @@ async function withSignedImages(rows: ProductRow[]): Promise<Product[]> {
     price: Number(row.price),
     priceOnRequest: row.price_on_request,
     ...(row.sale_price === null ? {} : { salePrice: Number(row.sale_price) }),
+    gstRate: Number(row.gst_rate ?? 18),
     images: row.images.map((image) => signed.get(image) ?? image),
     stock: row.stock,
     sizes: row.sizes,

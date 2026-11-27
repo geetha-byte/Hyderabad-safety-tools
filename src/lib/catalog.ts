@@ -6,11 +6,13 @@ import respirator from "@/assets/respirator.jpg";
 export type Category = { slug: string; name: string; description: string; image: string; subs: string[] };
 export type Product = {
   id: string; slug: string; name: string; sku: string; category: string; brand: string;
-  description: string; price: number; salePrice?: number; images: string[]; stock: number;
-  sizes?: string[]; material: string; colour: string; features: string[]; addedDays: number; sold: number;
-  featured?: boolean; isDemo?: boolean; imagePaths?: string[]; priceOnRequest?: boolean;
+  description: string; price: number; salePrice?: number; gstRate: number;
+  images: string[]; stock: number;
+  sizes?: string[]; material: string; colour: string; features: string[];
+  addedDays: number; sold: number;
+  featured?: boolean; isDemo?: boolean; imagePaths?: string[];
+  priceOnRequest?: boolean;
 };
-
 export const categories: Category[] = [
   { slug: "ppe", name: "Personal Protective Equipment", description: "Complete PPE kits for every worksite.", image: hero, subs: ["PPE Kits", "Coveralls", "Hi-Vis Vests"] },
   { slug: "head-protection", name: "Head Protection", description: "Helmets and hard hats.", image: hero, subs: ["Hard Hats", "Bump Caps"] },

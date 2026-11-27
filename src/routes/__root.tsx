@@ -19,7 +19,6 @@ import { CategoryNav } from "@/components/site/CategoryNav";
 import { Footer, WhatsAppFab } from "@/components/site/Footer";
 import { Toaster } from "@/components/ui/sonner";
 import { productsQueryOptions } from "@/lib/products";
-import { supabase } from "@/integrations/supabase/client";
 
 function NotFoundComponent() {
   return (
@@ -92,14 +91,6 @@ function RootComponent() {
   const location = useLocation();
   const adminArea = location.pathname === "/auth" || location.pathname.startsWith("/admin");
 
-  useEffect(() => {
-    const { data } = supabase.auth.onAuthStateChange((event) => {
-      if (event !== "SIGNED_IN" && event !== "SIGNED_OUT" && event !== "USER_UPDATED") return;
-      router.invalidate();
-      if (event !== "SIGNED_OUT") queryClient.invalidateQueries();
-    });
-    return () => data.subscription.unsubscribe();
-  }, [queryClient, router]);
 
   return (
     <QueryClientProvider client={queryClient}>

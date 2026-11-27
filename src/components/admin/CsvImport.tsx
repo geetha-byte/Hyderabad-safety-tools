@@ -8,7 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { categoryName, inr } from "@/lib/catalog";
 import { parseProductCsv, findImportDuplicates, productCsvTemplate, categoryCsv, type CsvPreview } from "@/lib/product-csv";
-import { importProductCsv } from "@/lib/products.functions";
+import { importLocalProductCsv } from "@/lib/local-products.functions";
 
 function download(name: string, text: string) {
   const url = URL.createObjectURL(new Blob(["\uFEFF", text], { type: "text/csv;charset=utf-8" }));
@@ -16,12 +16,18 @@ function download(name: string, text: string) {
   URL.revokeObjectURL(url);
 }
 
-export function CsvImport({ existing }: { existing: { sku: string; slug: string }[] }) {
+export function CsvImport({
+  existing,
+  categories,
+}: {
+  existing: { sku: string; slug: string }[];
+  categories: { slug: string; name: string }[];
+}) {
   const [csv, setCsv] = useState("");
   const [preview, setPreview] = useState<CsvPreview | null>(null);
   const [busy, setBusy] = useState(false);
   const [count, setCount] = useState<number | null>(null);
-  const importCsv = useServerFn(importProductCsv);
+  const importCsv = useServerFn(importLocalProductCsv);
   const queryClient = useQueryClient();
   const errors = preview ? [...preview.errors, ...findImportDuplicates(preview.rows, existing)] : [];
 
@@ -30,7 +36,7 @@ export function CsvImport({ existing }: { existing: { sku: string; slug: string 
     if (!file) return;
     if (file.size > 5 * 1024 * 1024) { setPreview({ rows: [], errors: [{ row: 0, message: "CSV must be 5 MB or smaller." }] }); return; }
     setBusy(true);
-    try { const text = await file.text(); setCsv(text); setPreview(parseProductCsv(text)); }
+    try { const text = await file.text(); setCsv(text); setPreview(parseProductCsv(text, categories)); }
     catch { toast.error("Could not read this file. Choose a CSV file."); }
     finally { setBusy(false); }
   }
@@ -51,7 +57,7 @@ export function CsvImport({ existing }: { existing: { sku: string; slug: string 
   return <div className="min-w-0 space-y-5">
     <div className="flex flex-wrap gap-2">
       <Button variant="outline" onClick={() => download("safety-products-template.csv", productCsvTemplate())}><Download />Product template</Button>
-      <Button variant="outline" onClick={() => download("safety-product-categories.csv", categoryCsv())}><Download />Category list</Button>
+      <Button variant="outline" onClick={() => download("safety-product-categories.csv", categoryCsv(categories) )}><Download />Category list</Button>
     </div>
     <div className="space-y-2"><Label htmlFor="product-csv">Products CSV · up to 500 products, 5 MB</Label><Input id="product-csv" type="file" accept=".csv,text/csv" disabled={busy} onChange={(e) => { void choose(e.target.files?.[0]); e.target.value = ""; }} /></div>
     <dl className="grid gap-x-4 gap-y-2 border-y border-border py-3 text-sm sm:grid-cols-[auto_1fr]">

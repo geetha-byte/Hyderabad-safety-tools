@@ -6,7 +6,7 @@ export type CsvError = { row: number; message: string };
 export type CsvRow = { row: number; product: ProductInput };
 export type CsvPreview = { rows: CsvRow[]; errors: CsvError[] };
 const required = ["name", "sku", "category", "brand", "description", "price", "images"];
-export const csvColumns = [...required, "sale_price", "stock", "sizes", "colours", "material", "features", "featured", "slug", "price_on_request"];
+export const csvColumns = [...required, "sale_price","gst_rate", "stock", "sizes", "colours", "material", "features", "featured", "slug", "price_on_request"];
 const list = (value: string) => value.split(/[|,]/).map((v) => v.trim()).filter(Boolean);
 const imageList = (value: string) => value.split("|").map((v) => v.trim()).filter(Boolean);
 const imageValid = (value: string) => {
@@ -28,8 +28,10 @@ export function findImportDuplicates(rows: CsvRow[], existing: { sku: string; sl
   }
   return errors;
 }
-
-export function parseProductCsv(csv: string): CsvPreview {
+export function parseProductCsv(
+  csv: string,
+  categoryList: { slug: string; name: string }[] = categories,
+): CsvPreview {
   const rows: CsvRow[] = []; const errors: CsvError[] = [];
   if (new TextEncoder().encode(csv).length > 5 * 1024 * 1024) return { rows, errors: [{ row: 0, message: "CSV must be 5 MB or smaller." }] };
   const parsed = Papa.parse<Record<string, string>>(csv.replace(/^\uFEFF/, ""), {
@@ -46,7 +48,7 @@ export function parseProductCsv(csv: string): CsvPreview {
     const text = (key: string) => (data[key] ?? "").trim();
     const number = (key: string, fallback: number) => text(key) ? Number(text(key)) : fallback;
     const categoryText = text("category").toLowerCase();
-    const category = categories.find((c) => c.slug === categoryText || c.name.toLowerCase() === categoryText);
+    const category = categoryList.find((c) => c.slug === categoryText || c.name.toLowerCase() === categoryText);
     if (!category) errors.push({ row, message: "Unknown category. Use a category from the category list." });
     const featured = text("featured").toLowerCase();
     if (!["", "true", "false", "yes", "no", "1", "0"].includes(featured)) errors.push({ row, message: "Featured must be true or false." });
@@ -57,6 +59,7 @@ export function parseProductCsv(csv: string): CsvPreview {
       brand: text("brand"), description: text("description"), price: number("price", ["true", "yes", "1"].includes(text("price_on_request").toLowerCase()) ? 0 : NaN),
       priceOnRequest: ["true", "yes", "1"].includes(text("price_on_request").toLowerCase()),
       salePrice: text("sale_price") ? Number(text("sale_price")) : null,
+      gstRate: number("gst_rate", 18),
       stock: number("stock", 0), images, sizes: list(text("sizes")),
       colour: list(text("colours") || text("colour") || text("colors")).join(", "),
       material: text("material"), features: list(text("features")), featured: ["true", "yes", "1"].includes(featured),
@@ -72,11 +75,13 @@ export function parseProductCsv(csv: string): CsvPreview {
 export function productCsvTemplate(): string {
   return Papa.unparse({ fields: csvColumns, data: [[
     "Steel Toe Safety Shoes", "HST-SHOES-001", "safety-shoes", "Safety Brand",
-    "Steel toe safety footwear with an anti-slip sole.", "1200", "/images/shoes.jpg", "1000", "25",
+    "Steel toe safety footwear with an anti-slip sole.", "1200", "/images/shoes.jpg", "1000", "18", "25",
     "6|7|8|9|10", "Black|Brown", "Leather", "Steel toe|Anti-slip sole", "true", "steel-toe-safety-shoes",
   ]] });
 }
 
-export function categoryCsv(): string {
-  return Papa.unparse(categories.map(({ slug, name }) => ({ category: slug, name })));
+export function categoryCsv(
+  categoryList: { slug: string; name: string }[] = categories,
+): string {
+  return Papa.unparse(categoryList.map(({ slug, name }) => ({ category: slug, name })));
 }

@@ -8,9 +8,16 @@ import { Button } from "@/components/ui/button";
 import { CategoryNav } from "@/components/site/CategoryNav";
 
 export function Logo() {
-  return <Link to="/" className="flex shrink-0 items-center gap-2" aria-label="Hyderabad Safety Tools home"><span className="grid h-9 w-9 place-items-center rounded-md bg-accent text-accent-foreground"><ShieldCheck className="h-6 w-6" /></span><span className="leading-tight"><span className="block text-base font-bold">Hyderabad</span><span className="block text-[10px] font-bold uppercase tracking-widest text-accent">Safety Tools</span></span></Link>;
+  return (
+    <Link to="/" className="flex shrink-0 items-center" aria-label="Manoj Enterprises home">
+      <img
+        src="/images/manoj-enterprises-logo.png"
+        alt="Manoj Enterprises"
+        className="h-12 w-auto max-w-[190px] object-contain"
+      />
+    </Link>
+  );
 }
-
 function SearchBox() {
   const { data: products } = useSuspenseQuery(productsQueryOptions);
   const [q, setQ] = useState("");

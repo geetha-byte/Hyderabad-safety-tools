@@ -1,8 +1,8 @@
 import { queryOptions } from "@tanstack/react-query";
-import { listPublicProducts } from "@/lib/products.functions";
+import { listLocalProducts } from "@/lib/local-products.functions";
 
 export const productsQueryOptions = queryOptions({
   queryKey: ["products"],
-  queryFn: () => listPublicProducts(),
+  queryFn: () => listLocalProducts(),
   staleTime: 30_000,
 });

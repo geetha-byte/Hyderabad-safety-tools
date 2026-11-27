@@ -1,7 +1,10 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import { Grid2X2, List, SlidersHorizontal, X } from "lucide-react";
-import { categories, categoryName, filterProducts, type SortKey } from "@/lib/catalog";
+import { categoryName, filterProducts, type SortKey } from "@/lib/catalog";
+import { useQuery } from "@tanstack/react-query";
+import { useServerFn } from "@tanstack/react-start";
+import { listLocalCategories } from "@/lib/local-categories.functions";
 import { ProductCard } from "@/components/site/ProductCard";
 import { useSuspenseQuery } from "@tanstack/react-query";
 import { productsQueryOptions } from "@/lib/products";
@@ -25,6 +28,11 @@ const PER_PAGE = 9;
 
 function Shop() {
   const { data: products } = useSuspenseQuery(productsQueryOptions);
+  const fetchCategories = useServerFn(listLocalCategories);
+const { data: categories = [] } = useQuery({
+  queryKey: ["storefront-categories"],
+  queryFn: () => fetchCategories(),
+});
   const brands = Array.from(new Set(products.map((p) => p.brand)));
   const { q: q0, cat } = Route.useSearch();
   const [q, setQ] = useState(q0 ?? "");

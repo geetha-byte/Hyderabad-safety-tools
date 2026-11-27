@@ -4,27 +4,34 @@ import { useQueryClient } from "@tanstack/react-query";
 import { useServerFn } from "@tanstack/react-start";
 import { toast } from "sonner";
 import type { Product } from "@/lib/catalog";
-import { saveProduct, type ProductInput } from "@/lib/products.functions";
-import { supabase } from "@/integrations/supabase/client";
-import { categories } from "@/lib/catalog";
+import { saveLocalProduct, uploadLocalProductImage, type ProductInput } from "@/lib/local-products.functions";
+import { createLocalCategoryFn } from "@/lib/local-categories.functions";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 
 const blank: ProductInput = {
-  name: "", sku: "", category: "ppe", brand: "", description: "", price: 0, salePrice: null,
+  name: "", sku: "", category: "ppe", brand: "", description: "", price: 0, salePrice: null, gstRate: 18,
   images: [], stock: 0, sizes: [], material: "", colour: "", features: [], addedDays: 0, sold: 0, featured: false,
 };
 
 const field = "h-11 rounded-none bg-background";
 const split = (value: string) => value.split(",").map((item) => item.trim()).filter(Boolean);
 
-export function ProductForm({ product, onClose }: { product: Product | null; onClose: () => void }) {
+export function ProductForm({
+  product,
+  onClose,
+  categories,
+}: {
+  product: Product | null;
+  onClose: () => void;
+  categories: { slug: string; name: string }[];
+}) {
   const [form, setForm] = useState<ProductInput>(() => product ? {
     id: product.id, slug: product.slug, name: product.name, sku: product.sku, category: product.category,
     priceOnRequest: product.priceOnRequest ?? false,
-    brand: product.brand, description: product.description, price: product.price, salePrice: product.salePrice ?? null,
+    brand: product.brand, description: product.description, price: product.price, salePrice: product.salePrice ?? null, gstRate: product.gstRate ?? 18,
     images: product.imagePaths ?? product.images, stock: product.stock, sizes: product.sizes ?? [], material: product.material,
     colour: product.colour, features: product.features, addedDays: product.addedDays, sold: product.sold, featured: !!product.featured,
   } : blank);
@@ -32,31 +39,97 @@ export function ProductForm({ product, onClose }: { product: Product | null; onC
   const [sizeText, setSizeText] = useState((product?.sizes ?? []).join(", "));
   const [featureText, setFeatureText] = useState((product?.features ?? []).join(", "));
   const [busy, setBusy] = useState(false);
-  const save = useServerFn(saveProduct);
+  const [categoryOpen, setCategoryOpen] = useState(false);
+const [newCategoryName, setNewCategoryName] = useState("");
+const [newCategoryDescription, setNewCategoryDescription] = useState("");
+const [categoryBusy, setCategoryBusy] = useState(false);
+  const save = useServerFn(saveLocalProduct);
+  const createCategory = useServerFn(createLocalCategoryFn);
   const queryClient = useQueryClient();
 
   const set = <K extends keyof ProductInput>(key: K, value: ProductInput[K]) => setForm((current) => ({ ...current, [key]: value }));
-
-  async function upload(files: FileList | null) {
-    if (!files?.length) return;
-    setBusy(true);
-    try {
-      for (const file of Array.from(files)) {
-        if (!["image/jpeg", "image/png", "image/webp"].includes(file.type)) throw new Error("Use JPG, PNG or WebP images only.");
-        if (file.size > 5 * 1024 * 1024) throw new Error("Each image must be smaller than 5 MB.");
-        const extension = file.type === "image/png" ? "png" : file.type === "image/webp" ? "webp" : "jpg";
-        const path = `${crypto.randomUUID()}.${extension}`;
-        const { error } = await supabase.storage.from("product-images").upload(path, file, { cacheControl: "3600", upsert: false });
-        if (error) throw error;
-        setForm((current) => ({ ...current, images: [...current.images, path] }));
-        setPreviews((current) => [...current, URL.createObjectURL(file)]);
-      }
-      toast.success("Product photo uploaded");
-    } catch (error) {
-      toast.error(error instanceof Error ? error.message : "Photo upload failed");
-    } finally { setBusy(false); }
+  async function handleCreateCategory() {
+  if (newCategoryName.trim().length < 2) {
+    toast.error("Category name must be at least 2 characters.");
+    return;
   }
 
+  setCategoryBusy(true);
+
+  try {
+    const category = await createCategory({
+      data: {
+        name: newCategoryName.trim(),
+        description: newCategoryDescription.trim(),
+      },
+    });
+
+    await Promise.all([
+      queryClient.invalidateQueries({ queryKey: ["admin-categories"] }),
+      queryClient.invalidateQueries({ queryKey: ["categories"] }),
+    ]);
+
+    const createdSlug = category?.["slug"];
+
+if (typeof createdSlug !== "string") {
+  throw new Error("Category was created, but its slug was not returned.");
+}
+
+set("category", createdSlug);
+    setNewCategoryName("");
+    setNewCategoryDescription("");
+    setCategoryOpen(false);
+    toast.success("Category created and selected.");
+  } catch (error) {
+    toast.error(error instanceof Error ? error.message : "Could not create category.");
+  } finally {
+    setCategoryBusy(false);
+  }
+}
+  async function upload(files: FileList | null) {
+  if (!files?.length) return;
+  setBusy(true);
+  try {
+    for (const file of Array.from(files)) {
+      if (!["image/jpeg", "image/png", "image/webp"].includes(file.type)) {
+        throw new Error("Use JPG, PNG or WebP images only.");
+      }
+      if (file.size > 5 * 1024 * 1024) {
+        throw new Error("Each image must be smaller than 5 MB.");
+      }
+
+      const base64 = await new Promise<string>((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => {
+          const result = reader.result;
+          if (typeof result !== "string") {
+            reject(new Error("Could not read image."));
+            return;
+          }
+          resolve(result.split(",")[1] ?? "");
+        };
+        reader.onerror = () => reject(new Error("Could not read image."));
+        reader.readAsDataURL(file);
+      });
+
+      const result = await uploadLocalProductImage({
+        data: { mimeType: file.type as "image/jpeg" | "image/png" | "image/webp", base64 },
+      });
+
+      setForm((current) => ({
+        ...current,
+        images: [...current.images, result.path],
+      }));
+      setPreviews((current) => [...current, URL.createObjectURL(file)]);
+    }
+
+    toast.success("Product photo uploaded");
+  } catch (error) {
+    toast.error(error instanceof Error ? error.message : "Photo upload failed");
+  } finally {
+    setBusy(false);
+  }
+}
   async function submit(event: FormEvent) {
     event.preventDefault();
     if (!form.images.length) { toast.error("Add at least one product photo."); return; }
@@ -78,11 +151,74 @@ export function ProductForm({ product, onClose }: { product: Product | null; onC
         <div className="space-y-2 sm:col-span-2"><Label htmlFor="product-name">Product name</Label><Input id="product-name" required minLength={2} value={form.name} onChange={(e) => set("name", e.target.value)} className={field} /></div>
         <div className="space-y-2"><Label htmlFor="sku">SKU</Label><Input id="sku" required value={form.sku} onChange={(e) => set("sku", e.target.value)} className={field} placeholder="e.g. HST-FE-001" /></div>
         <div className="space-y-2"><Label htmlFor="brand">Brand</Label><Input id="brand" required value={form.brand} onChange={(e) => set("brand", e.target.value)} className={field} /></div>
-        <div className="space-y-2 sm:col-span-2"><Label htmlFor="category">Category</Label><select id="category" value={form.category} onChange={(e) => set("category", e.target.value)} className="h-11 w-full rounded-none border border-input bg-background px-3 text-sm">{categories.map((category) => <option key={category.slug} value={category.slug}>{category.name}</option>)}</select></div>
+        <div className="space-y-2 sm:col-span-2">
+  <Label htmlFor="category">Category</Label>
+  <select
+    id="category"
+    value={form.category}
+    onChange={(e) => set("category", e.target.value)}
+    className="h-11 w-full rounded-none border border-input bg-background px-3 text-sm"
+  >
+    {categories.map((category) => (
+      <option key={category.slug} value={category.slug}>
+        {category.name}
+      </option>
+    ))}
+  </select>
+
+  <Button
+    type="button"
+    variant="outline"
+    size="sm"
+    onClick={() => setCategoryOpen((open) => !open)}
+  >
+    {categoryOpen ? "Cancel Add Category" : "+ Add New Category"}
+  </Button>
+
+  {categoryOpen && (
+    <div className="space-y-3 border border-border p-4">
+      <Input
+        placeholder="Category name"
+        value={newCategoryName}
+        onChange={(e) => setNewCategoryName(e.target.value)}
+        maxLength={100}
+        className={field}
+      />
+      <Textarea
+        placeholder="Category description"
+        value={newCategoryDescription}
+        onChange={(e) => setNewCategoryDescription(e.target.value)}
+        maxLength={500}
+        rows={3}
+      />
+      <Button
+        type="button"
+        disabled={categoryBusy}
+        onClick={handleCreateCategory}
+      >
+        {categoryBusy ? "Creating..." : "Save Category"}
+      </Button>
+    </div>
+  )}
+</div>
         <div className="space-y-2 sm:col-span-2"><Label htmlFor="description">Description</Label><Textarea id="description" required minLength={10} rows={4} value={form.description} onChange={(e) => set("description", e.target.value)} className="rounded-none bg-background" /></div>
         <label className="flex items-center gap-3 text-sm font-semibold sm:col-span-2"><input type="checkbox" checked={form.priceOnRequest ?? false} onChange={(e) => { set("priceOnRequest", e.target.checked); if (e.target.checked) set("salePrice", null); }} />Price on request</label>
         <div className="space-y-2"><Label htmlFor="price">Regular price (₹)</Label><Input id="price" type="number" min="0" step="0.01" required disabled={form.priceOnRequest} value={form.price} onChange={(e) => set("price", e.target.valueAsNumber || 0)} className={field} /></div>
         <div className="space-y-2"><Label htmlFor="sale-price">Sale price (₹, optional)</Label><Input id="sale-price" type="number" min="0" step="0.01" disabled={form.priceOnRequest} value={form.salePrice ?? ""} onChange={(e) => set("salePrice", e.target.value === "" ? null : e.target.valueAsNumber)} className={field} /></div>
+        <div className="space-y-2">
+  <Label htmlFor="gst-rate">GST rate (%)</Label>
+  <Input
+    id="gst-rate"
+    type="number"
+    min="0"
+    max="100"
+    step="0.01"
+    required
+    value={form.gstRate}
+    onChange={(e) => set("gstRate", e.target.valueAsNumber || 0)}
+    className={field}
+  />
+</div>
         <div className="space-y-2"><Label htmlFor="stock">Stock quantity</Label><Input id="stock" type="number" min="0" step="1" required value={form.stock} onChange={(e) => set("stock", e.target.valueAsNumber || 0)} className={field} /></div>
         <div className="space-y-2"><Label htmlFor="sold">Units sold</Label><Input id="sold" type="number" min="0" step="1" required value={form.sold} onChange={(e) => set("sold", e.target.valueAsNumber || 0)} className={field} /></div>
         <div className="space-y-2"><Label htmlFor="material">Material</Label><Input id="material" value={form.material} onChange={(e) => set("material", e.target.value)} className={field} /></div>
